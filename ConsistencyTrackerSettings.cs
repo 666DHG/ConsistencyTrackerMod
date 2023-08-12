@@ -74,7 +74,7 @@ namespace Celeste.Mod.ConsistencyTracker
         [SettingIgnore]
         public bool VerboseLogging { get; set; } = false;
         public void CreateTrackingSettingsEntry(TextMenu menu, bool inGame) {
-            TextMenuExt.SubMenu subMenu = new TextMenuExt.SubMenu("Tracking Settings", false);
+            TextMenuExt.SubMenu subMenu = new TextMenuExt.SubMenu(MODOPTIONS_CONSISTENCYTRACKER_TS, false);
             TextMenu.Item menuItem;
 
             subMenu.Add(new TextMenu.SubHeader("=== General ==="));
